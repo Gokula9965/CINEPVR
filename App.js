@@ -1,22 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
 
-import { MovieContext } from './Context';
-import Homescreen from './screens/Homescreen';
-import StackNavigator from './StackNavigator';
+import { MovieContext } from "./Context";
+import StackNavigator from "./StackNavigator";
+
 export default function App() {
   return (
     <>
-  
       <MovieContext>
-
-<StackNavigator />
-<StatusBar style="auto" />
-
-</MovieContext>
-      
-      
-
+        <StackNavigator />
+        <StatusBar style="auto" />
+      </MovieContext>
     </>
   );
 }
@@ -24,7 +18,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-
+    backgroundColor: "#fff",
   },
 });
